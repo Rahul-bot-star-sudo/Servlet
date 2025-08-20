@@ -3,20 +3,95 @@
         <title>Form using servlet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 40%;
+                margin: auto;
+                padding: 20px;
+                border: 2px solid black;
+                font-size: 20px;
+            }
+            #my_form table tr td input{
+               font-size: 20px; 
+            }
+            #my_form table tr td{
+                font-size: 20px;
+                padding: 5px;
+            }
+            
+            #form_heading{
+                text-align: center;
+            }
+        </style>
     </head>
+    
     <body>
         <div class="container">
-            <h1>This is Form</h1>
-            <form action="RegisterServlet" method="post">
+            <h1 id="form_heading">This is Form</h1>
+            <form  id="my_form" action="RegisterServlet" method="post">
                 <table>
                     <tr>
                     <td>
                         Enter your Name: 
                     </td>
                     <td>
-                        <input type="text" name="user_name" placeholder="Enter Your Name...">
+                        <input type="text" name="user_name" placeholder="Enter Your Name..." />
                     </td>
                     </tr>
+                    <tr>
+                        <td>Enter your password:</td>
+                    <td>
+                        <input type="password" name="user_password" placeholder="Enter your password..." />
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Enter your email:</td>
+                    <td>
+                        
+                        <input type="email" name="user_email" placeholder="Enter your email..." />
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter your gender:
+                        </td>
+                        <td>
+                            <input type="radio" name="user_gender" value="male">Male &ndash; &nbsp;<input value="female" type="radio" name="user_gender" >Female
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            Select course:
+                            
+                        </td>
+                        <td>
+                            <select name="user_course">
+                                <option value="java">Java</option>
+                                <option value="c++">C++</option>
+                                <option value="php">PHP</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">
+                            <input type="checkbox" name="condition" value="checked"> </td>
+                        <td>
+                            All detail are filled...
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <button type="submit">Register</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                    
+                    
                 </table>
             </form>
         </div>

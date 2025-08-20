@@ -1,0 +1,8 @@
+ROOT/
+docs/
+examples/
+host-manager/
+manager/
+*.war
+HelloServletProject/
+student-management/

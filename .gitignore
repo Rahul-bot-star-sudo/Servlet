@@ -1,0 +1,12 @@
+# Ignore Tomcat default folders
+ROOT/
+docs/
+examples/
+host-manager/
+manager/
+
+# Ignore war files
+*.war
+
+# Ignore any other project folders you don't want
+student-management/

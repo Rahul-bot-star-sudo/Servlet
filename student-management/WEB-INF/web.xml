@@ -1,0 +1,13 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+
+  <servlet>
+    <servlet-name>Signup</servlet-name>
+    <servlet-class>com.student.servlet.SignServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Signup</servlet-name> <!-- ✅ match ho gaya -->
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+</web-app>

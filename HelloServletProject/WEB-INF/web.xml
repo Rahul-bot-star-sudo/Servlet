@@ -1,0 +1,28 @@
+<web-app >
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.example.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SecondHello</servlet-name>
+        <servlet-class>com.example.SecondHello</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondHello</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping> 
+    <servlet>
+        <servlet-name>ThirdHello</servlet-name>
+        <servlet-class>com.example.ThirdHello</servlet-class>
+
+    </servlet>      
+    <servlet-mapping>
+        <servlet-name>ThirdHello</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+
+</web-app>
